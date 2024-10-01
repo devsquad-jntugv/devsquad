@@ -29,7 +29,7 @@ const AiDash = () => {
           <div className='w-[100%] flex flex-col gap-2 rounded-md shadow-md shadow-slate-600 py-2 px-2'>
               <h1 className='flex-1 text-lg sm:text-xl font-semibold text-black py-2'>Student Coordinators</h1>
               <div className='flex flex-col sm:flex-row gap-2 sm:justify-center'>
-                  <div className='flex justify-start items-center sm:flex-row sm:justify-center sm:items-center border border-transparent sm:border sm:border-transparent sm:border-r-slate-600  border-b-slate-600 mt-1 mb-1 px-2'>
+                  <div className='flex justify-start items-center sm:flex-row sm:justify-center sm:items-center border border-transparent sm:border sm:border-transparent sm:border-r-slate-600  border-b-slate-600 mt-1 mb-1'>
                     <img src={SubClubCoordinators['AI-H']} className='h-[70px] w-[70px] sm:h-[100px] sm:w-[100px] rounded-full' alt=''/>
                     <div className='flex flex-col gap-2 px-2'>
                       <h1 className='text-lg text-[#00df9a] font-medium'>President</h1>
