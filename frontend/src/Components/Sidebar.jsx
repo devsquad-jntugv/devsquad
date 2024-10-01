@@ -72,9 +72,9 @@ const Sidebar = () => {
             </div>
         </div>
     </div>
-    <div className='z-[7] lg:hidden fixed right-0 top-[60px] sm:top-[70px] w-[100%] flex justify-end items-center gap-2 px-2 py-2 mb-5 shadow-sm  bg-white'>
+    <div className='z-[7] lg:hidden fixed right-0 top-[60px] sm:top-[70px] w-[100%] flex justify-end items-center gap-2 px-2 py-2 mb-5  bg-white'>
     <div className='lg:hidden mb-2 mr-3'>
-        <select className='py-2 px-2 outline-none text-[16px] font-medium' value={selectedPage} onChange={handelNavInMobile}>
+        <select className='py-2 px-2 outline-none border-none bg-white text-[16px] font-medium' value={selectedPage} onChange={handelNavInMobile}>
             <option className='py-2 px-2' value='/dashboard'>Main Dashboard</option>
             <option value='eisociety'>EI SOCIETY CLUB</option>
             <option value='arts'>YUKTA KALA SANGAM CLUB</option>
