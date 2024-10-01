@@ -162,38 +162,6 @@ workshops, this prepares students for the fast evolving world of media and commu
           </h1>
           <div className="w-[170px] sm:w-[200px] h-[3px] rounded-sm bg-slate-400"></div>
         </div>
-        <div className="flex flex-col sm:flex sm:flex-row gap-3 py-10 hover:cursor-pointer">
-          <div className="py-2 px-2 flex flex-1 sm:gap-3 gap-2 justify-start items-center shadow-md shadow-gray-500 rounded-sm hover:translate-y-[-12px] duration-300">
-            <img className="bg-cover object-cover rounded-full sm:w-[160px] sm:h-[160px] w-[120px] h-[120px]" src={Backgrounds.hi} alt="/" />
-            <div className="sm:ml-[6px]">
-              <h1 className="sm:text-[22px] text-[20px] font-bold">Name</h1>
-              <h2 className="sm:text-[20px] text-[18px] font-medium">Designation</h2>
-              <h2 className="text-[18px] font-medium">Education</h2>
-              <div className="flex justify-start items-center sm:gap-2 gap-1 mt-1">
-                <FaFacebook className="text-[20px] sm:text-[23px]  hover:text-blue-600 hover:cursor-pointer" />
-                <FaInstagram className="text-[20px] sm:text-[23px]  hover:text-[#fe8150] hover:cursor-pointer" />
-                <FaTwitter className="text-[20px] sm:text-[23px]  hover:text-blue-600 hover:cursor-pointer" />
-                <FaLinkedin className="text-[20px] sm:text-[23px]  hover:text-blue-600 hover:cursor-pointer" />
-                <FaGithub className="text-[20px] sm:text-[23px]  hover:text-slate-600 hover:cursor-pointer" />
-              </div>
-            </div>
-          </div>
-          <div className="py-2 px-2 flex flex-1 sm:gap-3 gap-2 justify-start items-center shadow-md shadow-gray-500 rounded-sm hover:translate-y-[-12px] duration-300">
-            <img className="bg-cover object-cover rounded-full sm:w-[160px] sm:h-[160px] w-[120px] h-[120px]" src={Backgrounds.hi} alt="/" />
-            <div className="sm:ml-[6px] ">
-              <h1 className="sm:text-[22px] text-[20px] font-bold">Name</h1>
-              <h2 className="sm:text-[20px] text-[18px] font-medium">Designation</h2>
-              <h2 className="text-[18px] font-medium">Education</h2>
-              <div className="flex justify-start items-center sm:gap-2 gap-1 mt-1">
-                <FaFacebook className="text-[20px] sm:text-[23px] hover:text-blue-600 hover:cursor-pointer" />
-                <FaInstagram className="text-[20px] sm:text-[23px] hover:text-[#fe8150] hover:cursor-pointer" />
-                <FaTwitter className="text-[20px] sm:text-[23px] hover:text-blue-600 hover:cursor-pointer" />
-                <FaLinkedin className="text-[20px] sm:text-[23px] hover:text-blue-600 hover:cursor-pointer" />
-                <FaGithub className="text-[20px] sm:text-[23px] hover:text-slate-600 hover:cursor-pointer" />
-              </div>
-            </div>
-          </div>
-        </div>
         <div className="flex flex-col gap-3 justify-center items-center mt-4">
           <h1 className="text-xl sm:text-2xl lg:text-3xl text-purple-600 font-bold">
             OUR STUDENT COORDINATORS
