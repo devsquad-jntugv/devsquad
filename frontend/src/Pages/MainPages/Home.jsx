@@ -276,12 +276,12 @@ workshops, this prepares students for the fast evolving world of media and commu
               <p className="font-medium"><Link to='/dashboard'>Clubs</Link></p>
             </div>
             <div>
-              <p className="font-medium">EI Society</p>
-              <p className="font-medium">Nyan</p>
-              <p className="font-medium">Yukta Kala Sangam</p>
-              <p className="font-medium">FST</p>
-              <p className="font-medium">AI-ML</p>
-              <p className="font-medium">Yuva Seva Sankalpam</p>
+              <p className="font-medium"><Link to='/dashboard/eisociety'>Ei Society</Link></p>
+              <p className="font-medium"><Link to='/dashboard/nyan'>Nyan</Link></p>
+              <p className="font-medium"><Link to='/dashboard/arts'>Yukta Kala Sangam</Link></p>
+              <p className="font-medium"><Link to='/dashboard/fst'>FST</Link></p>
+              <p className="font-medium"><Link to='/dashboard/ai'>AI-ML</Link></p>
+              <p className="font-medium"><Link to='/dashboard/seva'>Yuva Seva Sankalpam</Link></p>
             </div>
           </div>
         </div>

@@ -10,12 +10,7 @@ const Contact = () => {
             <div className='h-[4px] w-[180px] bg-slate-600 rounded-sm mb-3 '></div>
             <p className='py-4 px-2 text-[17px] font-medium'>Whether you have queries about our events, want to join a club, or need assistance with anything related to our activities, feel free to reach out.For specific club inquiries or collaborations, mention the club in your subject line and we’ll direct your message to the right team!</p>
             <h2 className='py-2 px-2 text-[19px] font-medium text-purple-600 mb-2'>Stay connected with us and grow your tech skills with Yukta DevSquad.</h2>
-            <div className='flex flex-col sm:flex sm:flex-row justify-start items-center gap-3'>
-              <div className='mr-2 py-8 px-4 shadow-sm shadow-slate-800 rounded-md hover:cursor-pointer'>
-                 <h2 className='text-lg sm:text-xl text-purple-700 font-semibold mb-2'> BY PHONE</h2>
-                 <p className='text-[16px] font-medium'>Contact our coordinators through mobile</p>
-                 <p className='text-[18px] font-medium'>Mobile Number : +919999999999</p>
-              </div>
+            <div className='flex flex-col sm:justify-start gap-3'>
               <div  className='mr-2 py-8 px-4 shadow-sm shadow-slate-800 rounded-md hover:cursor-pointer'>
                 <h2 className='text-lg sm:text-xl text-purple-700 font-semibold mb-2'>BY MAIL</h2>
                 <p className='text-[16px] font-medium'>Contact our coordinators through E-Mail</p>

@@ -117,8 +117,8 @@ const chartData = {
           {
             clubs.map((item)=>{
               return(
-                <div key={item.id} className=' flex-shrink-0'>
-                  <img src={item.image} alt='/' className='w-[160px] h-[160px] cursor-pointer'></img>
+                <div key={item.id} className=' flex-shrink-0 w-[160px] h-[160px]'>
+                  <img src={item.image} alt='/' className='bg-cover cursor-pointer'></img>
                 </div>
               )
             })

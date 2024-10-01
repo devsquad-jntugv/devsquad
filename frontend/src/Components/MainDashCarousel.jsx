@@ -53,11 +53,32 @@ const MainCarousel = () => {
         Branch:'Information Technology',
     }
 ]
+const scrollLeft = () => {
+  cardContainerRef.current.scrollBy({
+    top: 0,
+    left: -300, // Adjust this value based on card width
+    behavior: "smooth",
+  });
+};
+
+// Scroll to the right
+const scrollRight = () => {
+  cardContainerRef.current.scrollBy({
+    top: 0,
+    left: 200, // Adjust this value based on card width
+    behavior: "smooth",
+  });
+};
   // Scroll to the left
   return (
-    <div className="flex relative lg:w-[1200px] sm:w-[900px] w-[400px] items-center gap-4 z-0">
+    <div className="flex relative lg:w-[1200px] sm:w-[700px] w-[400px] items-center gap-4 z-0">
       {/* Left Button */}
-
+      <button
+        onClick={scrollLeft}
+        className="hidden sm:block absolute left-0 z-10 p-2 bg-gray-500 text-white rounded-full hover:bg-gray-700"
+      >
+        &#10094;
+      </button>
       {/* Card Container */}
       <div
         ref={cardContainerRef}
@@ -86,7 +107,12 @@ const MainCarousel = () => {
           </div>
         ))}
       </div>
-
+      <button
+        onClick={scrollRight}
+        className="hidden sm:block absolute right-0 z-10 p-2 bg-gray-500 text-white rounded-full hover:bg-gray-700"
+      >
+        &#10095;
+      </button>
       {/* Right Button */}
     </div>
   );

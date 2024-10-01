@@ -22,7 +22,7 @@ const NyanDash = () => {
           <div className='flex flex-col gap-2 rounded-md shadow-md shadow-slate-600 py-2 px-2'>
               <h1 className='text-lg sm:text-xl font-semibold text-black py-2'>Student Coordinators</h1>
               <div className='flex flex-col sm:flex-row gap-2'>
-                  <div className='flex gap-2 justify-center items-center border border-transparent sm:border sm:border-transparent sm:border-r-slate-600  border-b-slate-600 mt-1 mb-1'>
+                  <div className='flex gap-2 justify-start sm:justify-center items-center border border-transparent sm:border sm:border-transparent sm:border-r-slate-600  border-b-slate-600 mt-1 mb-1'>
                     <img src={SubClubCoordinators['Nyan-H']} className='h-[70px] w-[70px] sm:h-[100px] sm:w-[100px] rounded-full' alt=''/>
                     <div className='flex flex-col gap-2 px-2'>
                       <h1 className='text-lg text-[#00df9a] font-medium'>President</h1>
@@ -30,7 +30,7 @@ const NyanDash = () => {
                       <p className='text-sm sm:text-lg font-sans text-slate-600'>3rd year(IT)</p>
                     </div>
                   </div>
-                  <div className='flex gap-2 justify-center items-center'>
+                  <div className='flex gap-2 justify-start sm:justify-center items-center'>
                     <img src={SubClubCoordinators['Nyan-V']} className='h-[70px] w-[70px] sm:h-[100px] sm:w-[100px] rounded-full' alt=''/>
                     <div className='flex flex-col gap-2 px-2'>
                       <h1  className='text-lg text-[#00df9c] font-medium'>Vice President</h1>

@@ -13,9 +13,9 @@ const AiDash = () => {
       </div>
       <div className='lg:grid lg:grid-rows-1 lg:grid-cols-[1.2fr,2fr,1fr] gap-2 grid grid-cols-1 sm:grid sm:grid-rows-2 sm:grid-cols-[1fr,2fr]'>
           <div className='w-[100%] flex flex-col gap-2 rounded-md shadow-md shadow-slate-600'>
-            <div className='flex-1 flex flex-col gap-2 ml-3'>
-              <h1 className='text-lg sm:text-xl font-semibold text-black py-2'>Faculty Coordinator</h1>
-              <div className='flex gap-1 justify-center items-center'>
+            <div className='flex-1 flex flex-col gap-2'>
+              <h1 className='text-lg sm:text-xl font-semibold text-black py-2 ml-2'>Faculty Coordinator</h1>
+              <div className='flex gap-1 sm:justify-center sm:items-center justify-start px-2'>
                 <img src={FacultyCoordinators.AI} className='h-[70px] w-[70px] sm:h-[100px] sm:w-[100px] rounded-full' alt=''/>
                 <div className='flex flex-col gap-2 mr-2 mb-2'>
                   <h2 className='text-lg font-semibold text-black'>Dr. Ch.Bindu Madhuri</h2>
@@ -28,8 +28,8 @@ const AiDash = () => {
           <div>
           <div className='w-[100%] flex flex-col gap-2 rounded-md shadow-md shadow-slate-600 py-2 px-2'>
               <h1 className='flex-1 text-lg sm:text-xl font-semibold text-black py-2'>Student Coordinators</h1>
-              <div className='flex flex-col sm:flex-row gap-2'>
-                  <div className='flex gap-2 justify-center items-center border border-transparent sm:border sm:border-transparent sm:border-r-slate-600  border-b-slate-600 mt-1 mb-1'>
+              <div className='flex flex-col sm:flex-row gap-2 sm:justify-center'>
+                  <div className='flex justify-start items-center sm:flex-row sm:justify-center sm:items-center border border-transparent sm:border sm:border-transparent sm:border-r-slate-600  border-b-slate-600 mt-1 mb-1 px-2'>
                     <img src={SubClubCoordinators['AI-H']} className='h-[70px] w-[70px] sm:h-[100px] sm:w-[100px] rounded-full' alt=''/>
                     <div className='flex flex-col gap-2 px-2'>
                       <h1 className='text-lg text-[#00df9a] font-medium'>President</h1>
@@ -37,7 +37,7 @@ const AiDash = () => {
                       <p className='text-sm sm:text-lg font-sans text-slate-600'>3rd year(IT)</p>
                     </div>
                   </div>
-                  <div className='flex gap-2 justify-center items-center'>
+                  <div className='flex justify-start items-center sm:flex-row gap-2 sm:justify-center sm:items-center'>
                     <img src={SubClubCoordinators['AI-V']} className='h-[70px] w-[70px] sm:h-[100px] sm:w-[100px] rounded-full' alt=''/>
                     <div className='flex flex-col gap-2 px-2'>
                       <h1  className='text-lg text-[#00df9c] font-medium'>Vice President</h1>
@@ -50,7 +50,7 @@ const AiDash = () => {
           </div>
           <div className='flex flex-col gap-2 py-3 justify-center text-center rounded-md shadow-md shadow-slate-600'>
             <h1 className='text-xl sm:text-2xl text-black font-medium'>No.Of Members</h1>
-            <p className='text-2xl sm:text-3xl text-[#ff6200] font-bold'>15</p>
+            <p className='text-2xl sm:text-3xl text-[#ff6200] font-bold'>112</p>
             
           </div>
         </div>

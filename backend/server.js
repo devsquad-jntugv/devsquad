@@ -11,8 +11,8 @@ const EventSchema = new mongoose.Schema({
     clubName: { type: String, required: true },   // Changed from 'subclub' to 'clubName'
     eventName: { type: String, required: true },  // Event name
     participants: { type: Number, required: true },
-    conductDate: { type:Date, required: true },
-    endDate: { type:Date, required: true },       // Event end date
+    conductDate: { type: Date, required: true },
+    endDate: { type: Date, required: true },      // Event end date
 });
 
 // Mongoose model for Event
@@ -21,7 +21,7 @@ const Event = mongoose.model('Event', EventSchema);
 // POST request to add a new event
 app.post('/api/events', async (req, res) => {
     console.log('Request Body:', req.body);
-    const { clubName, eventName, participants, conductDate, endDate } =req.body;
+    const { clubName, eventName, participants, conductDate, endDate } = req.body;
 
     // Validate required fields
     if (!clubName || !eventName || !participants || !conductDate || !endDate) {
@@ -30,7 +30,7 @@ app.post('/api/events', async (req, res) => {
 
     try {
         // Create a new event with the correct field names
-        const newEvent = new Event({ clubName, eventName, participants,conductDate, endDate });
+        const newEvent = new Event({ clubName, eventName, participants, conductDate, endDate });
         await newEvent.save();
         res.status(201).json(newEvent);
     } catch (error) {
@@ -52,10 +52,10 @@ app.get('/api/events', async (req, res) => {
 
 // PUT request to update an event by ID
 app.put('/api/events/:id', async (req, res) => {
-    const { clubName, eventName, participants,conductDate, endDate } = req.body;
+    const { clubName, eventName, participants, conductDate, endDate } = req.body;
 
     // Validate required fields
-    if (!clubName || !eventName || !participants ||!conductDate|| !endDate) {
+    if (!clubName || !eventName || !participants || !conductDate || !endDate) {
         return res.status(400).json({ message: 'All fields are required' });
     }
 
@@ -64,7 +64,7 @@ app.put('/api/events/:id', async (req, res) => {
 
         // Update the event using the correct fields
         const updatedEvent = await Event.findByIdAndUpdate(eventId, 
-            { clubName, eventName, participants,conductDate, endDate }, 
+            { clubName, eventName, participants, conductDate, endDate }, 
             { new: true }
         );
 
@@ -99,7 +99,7 @@ app.delete('/api/events/:id', async (req, res) => {
 
 // MongoDB connection and server startup
 const PORT = 5000;
-const MONGODB_URI = 'mongodb://localhost:27017/eventsdb';
+const MONGODB_URI = "mongodb+srv://yuktadevsquad:Devsquad%4024@devsquad-cluster.zkc1h.mongodb.net/?retryWrites=true&w=majority";
 
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,

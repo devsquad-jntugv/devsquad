@@ -1,8 +1,8 @@
-import React, { useState, useRef } from 'react';
+import React, { useState} from 'react';
 import { EventsCond } from '../../Assets/assets';
 
 const EventsSlider = () => {
-  const cardContainerRef = useRef(null);
+
 
   // Modal state to store the event details and whether it's open
   const [selectedEvent, setSelectedEvent] = useState(null);
@@ -24,7 +24,7 @@ const EventsSlider = () => {
     {
       id: 2,
       title: 'Food Drive',
-      shortdescription: 'A Food Drive is an initiative to donate food to those in need, helping to combat hunger in communities.',
+      shortdescription: 'A Food Drive is an initiative to donate food to those in need, helping to combat hunger in communities and some other people.',
       image: EventsCond.FoodDrive,
       description:'A Food Drive is a charitable initiative aimed at collecting and distributing food to those in need. It helps combat hunger by providing meals to underprivileged individuals and families. Communities, schools, and organizations often come together to donate non-perishable items and ensure food security. These efforts are vital in addressing hunger crises and fostering a sense of solidarity and support.',
       startDate: '2024-10-2',
@@ -51,23 +51,6 @@ const EventsSlider = () => {
   ];
 
   // Function to scroll left
-  const scrollLeft = () => {
-    cardContainerRef.current.scrollBy({
-      top: 0,
-      left: -300, // Adjust this value based on card width
-      behavior: 'smooth',
-    });
-  };
-
-  // Function to scroll right
-  const scrollRight = () => {
-    cardContainerRef.current.scrollBy({
-      top: 0,
-      left: 300, // Adjust this value based on card width
-      behavior: 'smooth',
-    });
-  };
-
   // Function to open the modal and set the selected event
   const handleReadMore = (event) => {
     setSelectedEvent(event);
@@ -81,33 +64,16 @@ const EventsSlider = () => {
 
   return (
     <>
-      <div className="relative w-full mx-auto flex items-center justify-center gap-4 ">
-        {/* Left Button */}
-        <button
-          onClick={scrollLeft}
-          className="hidden sm:block absolute left-0 z-10 p-2 bg-gray-500 text-white rounded-full hover:bg-gray-700"
-        >
-          &#10094;
-        </button>
-
-        {/* Card Container */}
-        <div
-          ref={cardContainerRef}
-          className="flex overflow-x-auto scrollbar-hide space-x-4 px-8 py-2 w-[100%]"
-        >
-          {Events.map((item) => (
-            <div
-              key={item.id}
-              className="flex-shrink-0 w-auto bg-white rounded-lg shadow-md shadow-gray-500 py-2 px-2 hover:cursor-pointer mt-3"
-            >
-              <div className=" w-[320px] py-2">
-                <div className="w-[315px] h-[250px] hover:top-0">
+     <div className='sm:flex sm:flex-row sm:items-center flex-wrap flex-col items-center gap-2 w-[100%] px-3'>
+        {Events.map((item) => (
+              <div className=" w-[350px] py-2 flex flex-col items-center gap-1 shadow-md shadow-gray-400 rounded-md">
+                <div className="w-[340px] h-[210px] hover:cursor-pointer">
                   <img
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full rounded-sm bg-cover bg-center"
                   />
-                </div>
+                 </div>
                 <div className="mt-2 px-2">
                   <p className="text-black text-[17px] font-medium">
                     {item.shortdescription}
@@ -120,18 +86,9 @@ const EventsSlider = () => {
                   </button>
                 </div>
               </div>
-            </div>
-          ))}
+        ))}
         </div>
-
-        {/* Right Button */}
-        <button
-          onClick={scrollRight}
-          className="hidden sm:block absolute right-0 z-10 p-2 bg-gray-500 text-white rounded-full hover:bg-gray-700"
-        >
-          &#10095;
-        </button>
-      </div>
+              
 
       {/* Modal */}
       {isModalOpen && selectedEvent && (
@@ -161,8 +118,9 @@ const EventsSlider = () => {
           </div>
         </div>
       )}
-    </>
+      </>
   );
 };
+
 
 export default EventsSlider;
