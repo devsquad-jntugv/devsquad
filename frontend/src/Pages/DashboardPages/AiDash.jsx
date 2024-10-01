@@ -8,7 +8,7 @@ const AiDash = () => {
   return (
     <div className='w-[100%] py-2 px-2 flex flex-col gap-2 sm:mt-8 lg:mt-0 mt-10'>
       <div className='px-1 flex justify-start items-center ml-[-15px]'>
-          <img src={Logos.AI} className='sm:w-[170px] sm:h-[170px] w-[120px] h-[120px] rounded-full' alt='/'></img>
+          <img src={Logos.AI} className='sm:w-[170px] sm:h-[170px] w-[120px] h-[120px] ml-2' alt='/'></img>
           <h1 className='text-xl sm:text-3xl text-black font-medium'>ArtificialIntelligence and MachineLearning Club </h1>
       </div>
       <div className='lg:grid lg:grid-rows-1 lg:grid-cols-[1.2fr,2fr,1fr] gap-2 grid grid-cols-1 sm:grid sm:grid-rows-2 sm:grid-cols-[1fr,2fr]'>
