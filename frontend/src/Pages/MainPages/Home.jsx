@@ -14,7 +14,7 @@ const Home = () => {
     <div className="max-w-[1700px] mx-auto relative">
       <section className="relative w-full h-screen py-4">
         {/* Text or content to be displayed above the image */}
-        <div className="relative z-5 text-center top-[48%] left-[50%] translate-x-[-50%] translate-y-[-48%] grid grid-cols-1 gap-1">
+        <div className="relative z-5 text-center top-[46%] left-[50%] translate-x-[-50%] translate-y-[-46%] grid grid-cols-1 gap-1">
           <h1 className="text-[17px] sm:text-[24px] lg:text-[28px] font-medium sm:font-medium text-[#432fa3] lg:mb-[-100px] sm:mb-[-50px] mb-[-20px]">
             JNTU-GV CEV(A) Department Of Information Technology Presents
           </h1>
