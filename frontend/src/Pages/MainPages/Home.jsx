@@ -164,7 +164,7 @@ workshops, this prepares students for the fast evolving world of media and commu
              DEPARTMENT COLLABORATIONS
           </h1>
           <div className="w-[170px] sm:w-[200px] h-[3px] rounded-sm bg-slate-400"></div>
-          <div className="overflow-hidden py-8">
+          <div className="overflow-x-auto py-8">
       {/* Container with infinite scroll animation */}
       <div className="flex animate-scroll gap-8">
         {/* Map over the logos array twice to create an infinite loop effect */}
