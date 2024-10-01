@@ -16,7 +16,7 @@ import hi from '../Assets/hi.jpeg';
 import AnilSir from '../Assets/AnilSir.jpg'
 import RoziMam from '../Assets/Rozi Mam.jpg'
 import codeQuest1 from '../Assets/codeQuest1.jpg'
-import FoodDrive from '../Assets/FoodDrive.png'
+import FoodDrive from '../Assets/FoodDrive.jpg'
 import Poster from '../Assets/PosterPresentation.jpg'
 import AiTools from '../Assets/AiTools.jpg'
 import President from '../Assets/President.jpg'

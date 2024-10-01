@@ -246,7 +246,7 @@ workshops, this prepares students for the fast evolving world of media and commu
             <div className="flex flex-col items-start gap-2">
               <p>Follow Us on:</p>
               <div className="flex flex-row items-center gap-2">
-              <a href="https://github.com/devsquad-jntugv" target="_blank" rel='noopener noreferrer'><FaInstagram className="text-[18px] hover:text-orange-600 hover:cursor-pointer"/> </a>
+              <a href="https://www.instagram.com/yukta_devsquad/" target="_blank" rel='noopener noreferrer'><FaInstagram className="text-[18px] hover:text-orange-600 hover:cursor-pointer"/> </a>
               <a href='https://www.linkedin.com/in/yukta-devsquad-971230330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blank' rel="noopener noreferrer"><FaLinkedin className="text-[18px] hover:text-blue-500 hover:cursor-pointer"/> </a>
               <a href="https://github.com/devsquad-jntugv" target='_blank' rel="noopener noreferrer"><FaGithub className="text-[18px] hover:text-blue-500 hover:cursor-pointer"/> </a>
               </div>
