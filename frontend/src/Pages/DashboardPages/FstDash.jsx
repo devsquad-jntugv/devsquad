@@ -8,7 +8,7 @@ const FstDash = () => {
   return (
     <div className='w-[100%] py-2 px-2 flex flex-col gap-2 sm:mt-10 lg:mt-0 mt-10'>
       <div className='flex justify-start items-center px-1 ml-[-10px]'>
-          <img src={Logos.FST} alt='/' className='sm:w-[140px] sm:h-[140px] w-[100px] h-[100px] rounded-full'></img>
+          <img src={Logos.FST} alt='/' className='sm:w-[140px] sm:h-[140px] w-[100px] h-[100px]'></img>
           <h1 className='text-xl sm:text-3xl text-black font-medium'>FullStack Technologies Club </h1>
       </div>
       <div className='lg:grid lg:grid-rows-1 lg:grid-cols-[1.2fr,2fr,1fr] gap-2 grid grid-cols-1 sm:grid sm:grid-rows-2 sm:grid-cols-[1fr,2fr]'>
