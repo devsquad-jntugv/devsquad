@@ -173,7 +173,7 @@ workshops, this prepares students for the fast evolving world of media and commu
             key={index}
             src={logo}
             alt={`Company logo ${index + 1}`}
-            className="w-36 h-28 object-contain"
+            className="w-36 h-28 object-contain bg-white"
           />
         ))}
       </div>
