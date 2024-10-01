@@ -158,13 +158,13 @@ workshops, this prepares students for the fast evolving world of media and commu
           </div>
         </div>
       </section>
-      <section className="w-[100%] py-16 px-8">
+      <section className="w-[100%] py-16 px-8 overflow-x-hidden">
         <div className="flex flex-col gap-3 justify-center items-center">
           <h1 className="text-xl sm:text-2xl lg:text-3xl text-purple-600 font-bold">
              DEPARTMENT COLLABORATIONS
           </h1>
           <div className="w-[170px] sm:w-[200px] h-[3px] rounded-sm bg-slate-400"></div>
-          <div className="overflow-x-auto py-8">
+          <div className="overflow-x-hide py-8">
       {/* Container with infinite scroll animation */}
       <div className="flex animate-scroll gap-8">
         {/* Map over the logos array twice to create an infinite loop effect */}
