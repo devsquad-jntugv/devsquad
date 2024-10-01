@@ -12,7 +12,7 @@ module.exports = {
         },
       },
       animation: {
-        scroll: 'scroll 20s linear infinite', // Adjust duration for speed
+        scroll: 'scroll 15s linear infinite', // Adjust duration for speed
       },
     },
   },
