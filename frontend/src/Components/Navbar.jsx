@@ -8,8 +8,8 @@ const Navbar = () => {
   return (
     <div className='fixed top-0 left-0 right-0 flex justify-between items-center w-[100%] px-4 py-2 bg-white text-black shadow-sm shadow-slate-400 z-[10]'>
         <div className='flex justify-between items-center'>
-            <img className='w-[50px] h-[50px]' src={Logos.Squad} alt=''/>
-            <h1 className='w-[100%] text-lg sm:text-2xl text-[#292eac] font-bold'>Yukta <span className='text-lg sm:text-2xl lg:text-3xl text-[#fc7536] font-medium'>DevSquad</span></h1>
+            <img className='w-[50px] h-[50px] hover:cursor-pointer' src={Logos.Squad} alt=''/>
+            <Link to='/'><h1 className='w-[100%] text-lg sm:text-2xl text-[#292eac] font-bold hover:cursor-pointer'>Yukta <span className='text-lg sm:text-2xl lg:text-3xl text-[#fc7536] font-medium hover:cursor-pointer'>DevSquad</span></h1></Link>
         </div>
         <div className='flex gap-5 items-center mr-4'>
             <ul className="hidden sm:flex sm:items-center">

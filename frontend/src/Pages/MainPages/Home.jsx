@@ -6,10 +6,13 @@ import {
   FaLinkedin,
   FaGithub,
 } from "react-icons/fa";
-import { Logos,Backgrounds,OverallStudents} from "../../Assets/assets";
+import { Logos,Backgrounds,OverallStudents,Collaboration} from "../../Assets/assets";
 import CardCarousel from "../../Components/Carousel";
 import { Link } from "react-router-dom";
 const Home = () => {
+  const logos = [
+    Collaboration.Infosys,Collaboration.Coursera,Collaboration.Nptel,Collaboration.Edx,Collaboration.oracle
+  ];
   return (
     <div className="max-w-[1700px] mx-auto relative">
       <section className="relative w-full h-screen py-4">
@@ -161,6 +164,20 @@ workshops, this prepares students for the fast evolving world of media and commu
              DEPARTMENT COLLABORATIONS
           </h1>
           <div className="w-[170px] sm:w-[200px] h-[3px] rounded-sm bg-slate-400"></div>
+          <div className="overflow-hidden py-8">
+      {/* Container with infinite scroll animation */}
+      <div className="flex animate-scroll gap-8">
+        {/* Map over the logos array twice to create an infinite loop effect */}
+        {logos.concat(logos,logos).map((logo, index) => (
+          <img
+            key={index}
+            src={logo}
+            alt={`Company logo ${index + 1}`}
+            className="w-36 h-28 object-contain"
+          />
+        ))}
+      </div>
+    </div>
         </div>
         <div className="flex flex-col gap-3 justify-center items-center mt-4">
           <h1 className="text-xl sm:text-2xl lg:text-3xl text-purple-600 font-bold">
@@ -229,9 +246,9 @@ workshops, this prepares students for the fast evolving world of media and commu
             <div className="flex flex-col items-start gap-2">
               <p>Follow Us on:</p>
               <div className="flex flex-row items-center gap-2">
-              <FaInstagram className="text-[18px] hover:text-orange-600 hover:cursor-pointer"/>
-              <FaLinkedin className="text-[18px] hover:text-blue-500 hover:cursor-pointer"/>
-              <FaFacebook className="text-[18px] hover:text-blue-500 hover:cursor-pointer"/>
+              <a href="https://github.com/devsquad-jntugv" target="_blank" rel='noopener noreferrer'><FaInstagram className="text-[18px] hover:text-orange-600 hover:cursor-pointer"/> </a>
+              <a href='https://www.linkedin.com/in/yukta-devsquad-971230330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target='_blank' rel="noopener noreferrer"><FaLinkedin className="text-[18px] hover:text-blue-500 hover:cursor-pointer"/> </a>
+              <a href="https://github.com/devsquad-jntugv" target='_blank' rel="noopener noreferrer"><FaGithub className="text-[18px] hover:text-blue-500 hover:cursor-pointer"/> </a>
               </div>
             </div>
             <p className="font-medium">E-mail:yuktadevsquad@gmail.com</p>

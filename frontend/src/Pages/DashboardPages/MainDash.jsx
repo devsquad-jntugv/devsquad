@@ -113,12 +113,12 @@ const chartData = {
         <MainCarousel/>
         <h1 className='py-2 text-xl sm:text-2xl font-medium text-purple-600 w-[200px] border border-transparent border-b-2 border-b-slate-400 rounded-sm'>Clubs We have</h1>
         <div className='overflow-hidden relative w-full mx-auto overflow-x-auto scrollbar-hide'>
-          <div className="flex items-center transition-transform duration-1000 ease-in-out">
+          <div className="flex items-center justify-between transition-transform duration-1000 ease-in-out">
           {
             clubs.map((item)=>{
               return(
-                <div key={item.id} className=' flex-shrink-0 w-[160px] h-[160px]'>
-                  <img src={item.image} alt='/' className='bg-cover cursor-pointer'></img>
+                <div key={item.id} className=' flex-shrink-0 w-[130px] h-[130px]'>
+                  <img src={item.image} alt='/' className='w-full h-full object-contain cursor-pointer'></img>
                 </div>
               )
             })

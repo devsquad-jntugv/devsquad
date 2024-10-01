@@ -43,6 +43,11 @@ import NyanHStudent from '../Assets/NyanHStudent.jpg'
 import NyanViceStudent from '../Assets/NyanViceStudent.jpg';
 import TechnicalLead from '../Assets/technicalLead.jpg';
 import BinduMam from '../Assets/BinduMam.jpg';
+import Oracle from '../Assets/oracleAcademyLogo.jpg'
+import Nptel from '../Assets/NptelLogo.jpg'
+import Infosys from '../Assets/infosyslogo.jpg'
+import Edx from '../Assets/edxLogo.png'
+import Coursera from '../Assets/courseraLogo.jpg'
  const Logos={
     "ACM":acm,
     'AI':AiMl,
@@ -102,4 +107,11 @@ const EventsCond={
     'PosterPresent':Poster,
     'AiTools':AiTools
 }
-export {Logos,Backgrounds,FacultyCoordinators,EventsCond,OverallStudents,SubClubCoordinators};
+const Collaboration={
+   'oracle':Oracle,
+    'Nptel':Nptel,
+    'Coursera':Coursera,
+    'Edx':Edx,
+    'Infosys':Infosys
+}
+export {Logos,Backgrounds,FacultyCoordinators,EventsCond,OverallStudents,SubClubCoordinators,Collaboration};
