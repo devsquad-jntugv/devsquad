@@ -1,9 +1,9 @@
-import React, { useState ,useEffect} from 'react'
 import axios from 'axios';
-import { Logos,OverallStudents } from '../../Assets/assets'
-import MainCarousel from '../../Components/MainDashCarousel'
-import { Pie,Bar } from 'react-chartjs-2';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
+import { ArcElement, Chart as ChartJS, Legend, Tooltip } from 'chart.js';
+import React, { useEffect, useState } from 'react';
+import { Bar, Pie } from 'react-chartjs-2';
+import { Logos, OverallStudents } from '../../Assets/assets';
+import MainCarousel from '../../Components/MainDashCarousel';
 ChartJS.register(ArcElement, Tooltip, Legend);
 const MainDash = () => {
   const [events,setEvents]=useState([]);
@@ -41,7 +41,7 @@ const MainDash = () => {
 useEffect(() => {
   const fetchEvents = async () => {
       try {
-          const response = await axios.get('http://localhost:5000/api/events');
+          const response = await axios.get('https://itdevsquadapi.vercel.app/api/events');
           setEvents(response.data);
       } catch (error) {
           console.error('Failed to fetch events:', error);

@@ -46,7 +46,7 @@
   },
   "proxy": {
     "/api_local": {
-      "target": "http://localhost:5000",
+      "target": "https://itdevsquadapi.vercel.app",
       "changeOrigin": true,
       "pathRewrite": { "^/api": "" }
     },
