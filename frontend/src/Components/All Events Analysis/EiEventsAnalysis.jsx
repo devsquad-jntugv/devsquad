@@ -8,8 +8,9 @@ const EventsAnalysis = () => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await axios.get('/api/events');
+                const response = await axios.get(`/api/events`);
                 const EIClub = response.data.filter(event => event.clubName === 'EiClub');
+                response.json(EIClub);
                 setEvents(EIClub);
             } catch (error) {
                 console.error('Failed to fetch events:', error);
