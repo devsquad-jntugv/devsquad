@@ -1,5 +1,5 @@
-import React, { useState ,useEffect} from 'react'
-import axios from 'axios'
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 const NyanEventAnalysis = () => {
     const [events,setEvents]=useState([]);
     const [errorMessage,setErrorMessage]=useState(null);

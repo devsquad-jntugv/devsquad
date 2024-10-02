@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
 
 const AdminLogin = () => {
@@ -48,6 +48,7 @@ const AdminLogin = () => {
       if (editingEventId) {
         // If editing, update the event
         const response = await axios.put(`https://itdevsquadapi.vercel.app/api/events/${editingEventId}`, newEvent);
+      
         setEvents(events.map(event => event._id === editingEventId ? response.data : event));
         setSuccessMessage('Event updated successfully!');
       } else {
@@ -80,6 +81,7 @@ const AdminLogin = () => {
   // Handle deleting an event
   const handleDeleteEvent = async (id) => {
     try {
+      await axios.delete(`https://itdevsquadapi.vercel.app/api/events/${id}`);
       await axios.delete(`https://itdevsquadapi.vercel.app/api/events/${id}`);
       setEvents(events.filter(event => event._id !== id));
       setSuccessMessage('Event deleted successfully!');
