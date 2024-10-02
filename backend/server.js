@@ -17,10 +17,20 @@ const EventSchema = new mongoose.Schema({
 
 // Mongoose model for Event
 const Event = mongoose.model('Event', EventSchema);
+app.get('/', async (req, res) => {
+    try {
+        // You can include any logic here, like fetching data from MongoDB if needed.
+        const message = "Yuktadevsquad --  api ensures working ..."; // Simple response message
+        res.status(200).json({ message });   // Send a JSON response
+    } catch (error) {
+        console.error('Error fetching data:', error);
+        res.status(500).json({ message: 'Server error' }); // Send an error response
+    }
+});
 
 // POST request to add a new event
 app.post('/api/events', async (req, res) => {
-    console.log('Request Body:', req.body);
+    //console.log('Request Body:', req.body);
     const { clubName, eventName, participants, conductDate, endDate } = req.body;
 
     // Validate required fields
@@ -34,7 +44,7 @@ app.post('/api/events', async (req, res) => {
         await newEvent.save();
         res.status(201).json(newEvent);
     } catch (error) {
-        console.error('Error adding event:', error);
+        //console.error('Error adding event:', error);
         res.status(500).json({ message: 'Failed to add event' });
     }
 });
@@ -45,7 +55,7 @@ app.get('/api/events', async (req, res) => {
         const events = await Event.find();
         res.json(events);
     } catch (error) {
-        console.error('Error fetching events:', error);
+       // console.error('Error fetching events:', error);
         res.status(500).json({ message: 'Failed to fetch events' });
     }
 });
@@ -92,7 +102,7 @@ app.delete('/api/events/:id', async (req, res) => {
 
         res.status(204).end();
     } catch (error) {
-        console.error('Error deleting event:', error);
+        //console.error('Error deleting event:', error);
         res.status(500).json({ message: 'Failed to delete event' });
     }
 });
