@@ -8,7 +8,7 @@ const FstEventAnalysis = () => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await axios.get(`/api/events`);
+                const response = await axios.get(`https://itdevsquadapi.vercel.app/api/events`);
                 const FSTClub = response.data.filter(event => event.clubName === "FSTClub");
                 setEvents(FSTClub);
             } catch (error) {
