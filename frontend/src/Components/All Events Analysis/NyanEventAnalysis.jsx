@@ -6,7 +6,7 @@ const NyanEventAnalysis = () => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await axios.get(`/api/events`);
+                const response = await axios.get(`https://itdevsquadapi.vercel.app/api/events`);
                 const NyanClub = response.data.filter(event => event.clubName === 'NyanClub');
                 setEvents(NyanClub);
             } catch (error) {

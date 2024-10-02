@@ -7,7 +7,7 @@ const SevaEventAnalysis = () => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await axios.get(`/api/events`);
+                const response = await axios.get(`https://itdevsquadapi.vercel.app/api/events`);
                 const SevaClub = response.data.filter(event => event.clubName === 'YuvaSevaClub');
                 setEvents(SevaClub);
             } catch (error) {

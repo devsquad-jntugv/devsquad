@@ -48,6 +48,7 @@ import Nptel from '../Assets/NptelLogo.jpg'
 import Infosys from '../Assets/infosyslogo.jpg'
 import Edx from '../Assets/edxLogo.png'
 import Coursera from '../Assets/courseraLogo.jpg'
+import Drishya from '../Assets/Drishya.jpg'
  const Logos={
     "ACM":acm,
     'AI':AiMl,
@@ -112,6 +113,7 @@ const Collaboration={
     'Nptel':Nptel,
     'Coursera':Coursera,
     'Edx':Edx,
-    'Infosys':Infosys
+    'Infosys':Infosys,
+    'Drishya':Drishya
 }
 export {Logos,Backgrounds,FacultyCoordinators,EventsCond,OverallStudents,SubClubCoordinators,Collaboration};

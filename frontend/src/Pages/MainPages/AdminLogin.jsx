@@ -18,7 +18,7 @@ const AdminLogin = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/events');
+        const response = await axios.get(`https://itdevsquadapi.vercel.app/api/events`);
         setEvents(response.data); // Set fetched events to state
       } catch (error) {
         console.error('Failed to fetch events:', error);
@@ -47,12 +47,12 @@ const AdminLogin = () => {
     try {
       if (editingEventId) {
         // If editing, update the event
-        const response = await axios.put(`http://localhost:5000/api/events/${editingEventId}`, newEvent);
+        const response = await axios.put(`https://itdevsquadapi.vercel.app/api/events/${editingEventId}`, newEvent);
         setEvents(events.map(event => event._id === editingEventId ? response.data : event));
         setSuccessMessage('Event updated successfully!');
       } else {
         // If adding, create a new event
-        const response = await axios.post('http://localhost:5000/api/events', newEvent);
+        const response = await axios.post(`/api/events`, newEvent);
         console.log(response.data)
         setEvents([...events, response.data]);
         setSuccessMessage('Event added successfully!');
@@ -80,7 +80,7 @@ const AdminLogin = () => {
   // Handle deleting an event
   const handleDeleteEvent = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/api/events/${id}`);
+      await axios.delete(`https://itdevsquadapi.vercel.app/api/events/${id}`);
       setEvents(events.filter(event => event._id !== id));
       setSuccessMessage('Event deleted successfully!');
     } catch (error) {

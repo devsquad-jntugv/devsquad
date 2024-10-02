@@ -3,7 +3,11 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin:['https://yuktadevsquad.vercel.app'],
+    methods:['POST',"GET","DELETE","PUT"],
+    credentials:true
+}))
 app.use(express.json());
 
 // Mongoose schema for Event
@@ -109,7 +113,7 @@ app.delete('/api/events/:id', async (req, res) => {
 
 // MongoDB connection and server startup
 const PORT = 5000;
-const MONGODB_URI = "mongodb+srv://yuktadevsquad:Devsquad%4024@devsquad-cluster.zkc1h.mongodb.net/?retryWrites=true&w=majority";
+const MONGODB_URI = "mongodb+srv://yuktadevsquad:Devsquad%4024@devsquad-cluster.zkc1h.mongodb.net/eventsdb?retryWrites=true&w=majority"
 
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,

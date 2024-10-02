@@ -13,7 +13,7 @@ const EventBarChart = ({ ClubName }) => {
     const fetchEvents = async () => {
       try {
         // Since both frontend and backend are deployed on the same domain, you can simply use the relative path
-        const response = await axios.get(`/api/events`); // No need for full domain
+        const response = await axios.get(`https://itdevsquadapi.vercel.app/api/events`); // No need for full domain
         const filteredEvents = response.data.filter(event => event.clubName === ClubName);
         setEvents(filteredEvents);
       } catch (error) {

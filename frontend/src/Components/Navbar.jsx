@@ -28,11 +28,11 @@ const Navbar = () => {
         <div className={nav? 'fixed left-[0%] top-0 w-[60%] h-full border-r border-gray-400 bg-slate-100 ease-in-out duration-500':'fixed left-[-100%]'}>
             <h1 className='w-[100%] text-[22px]  text-[#292eac] font-bold py-4 ml-[20px]'>Yukta<span className="text-[22px] text-[#fc7536] font-medium">DevSquad</span></h1>
              <ul className='pt-4 uppercase px-2 ml-[10px] mr-[10px]'>
-                <li className='p-4 border-b border-gray-300 hover:cursor-pointer'><Link to='/'>Home</Link></li>
-                <li className='p-4 border-b border-gray-300 hover:cursor-pointer'><Link to='/about'>About</Link></li>
-                <li className='p-4 border-b border-gray-300 hover:cursor-pointer'><Link to='/dashboard'>Dashboard</Link></li>
-                <li className='p-4 border-b border-gray-300 hover:cursor-pointer'><Link to='/contact'>Contact Us</Link></li>
-                <li className='p-4 bg-purple-500 text-[17px] font-medium rounded-md'><Link to={sessionStorage.getItem('login')?'/admin':'/adminlogin'}>Admin</Link></li>
+                <li className='p-4 border-b border-gray-300 hover:cursor-pointer' onClick={()=>{setNav(false)}} ><Link to='/'>Home</Link></li>
+                <li className='p-4 border-b border-gray-300 hover:cursor-pointer' onClick={()=>{setNav(false)}}><Link to='/about'>About</Link></li>
+                <li className='p-4 border-b border-gray-300 hover:cursor-pointer' onClick={()=>{setNav(false)}}><Link to='/dashboard'>Dashboard</Link></li>
+                <li className='p-4 border-b border-gray-300 hover:cursor-pointer' onClick={()=>{setNav(false)}}><Link to='/contact'>Contact Us</Link></li>
+                <li className='p-4 bg-purple-500 text-[17px] font-medium rounded-md' onClick={()=>{setNav(false)}}><Link to={sessionStorage.getItem('login')?'/admin':'/adminlogin'}>Admin</Link></li>
              </ul>
         </div>
     </div>
