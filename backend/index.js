@@ -9,13 +9,16 @@ dotenv.config();
 const app = express();
 app.use(cors({
     origin: ['https://yuktadevsquad.jntugvcev.in','https://yuktadevsquad.vercel.app','http://localhost:3000'],
-    methods: ["GET", "POST"]
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
 }));
 app.use(express.json());
 
 // Connect to the database
 connectDB();
-
+app.get('/', (req, res) => {
+    res.send('Welcome to Devsquad API');
+});
 // Use routes
 app.use('/api', routes);
 
