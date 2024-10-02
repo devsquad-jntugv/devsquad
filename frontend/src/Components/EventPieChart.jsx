@@ -9,7 +9,7 @@ const EventPieChart = ( {ClubName}) => {
     useEffect(() => {
         const fetchEvents = async (ClubName) => {
             try {
-                const response = await axios.get('http://localhost:5000/api/events');
+                const response = await axios.get('/api/events');
                 const AIClub = response.data.filter(event => event.clubName === ClubName);
                 setEvents(AIClub);
             } catch (error) {

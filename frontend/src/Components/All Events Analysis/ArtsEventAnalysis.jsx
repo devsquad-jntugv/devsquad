@@ -8,7 +8,7 @@ const ArtsEventAnalysis = () => {
     useEffect(() => {
         const fetchEvents = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/events');
+                const response = await axios.get('https://yuktadevsquadapi.vercel.app/api/events');
                 const ArtsClub = response.data.filter(event => event.clubName === 'Arts Club');
                 setEvents(ArtsClub);
             } catch (error) {
