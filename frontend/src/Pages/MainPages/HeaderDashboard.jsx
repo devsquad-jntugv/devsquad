@@ -11,7 +11,7 @@ import FstDash from '../DashboardPages/FstDash';
 import MainDash from '../DashboardPages/MainDash'
 const HeaderDashboard = ({events}) => {
   return (
-    <div className='max-w-[1500px] flex gap-2 mt-[70px]'>
+    <div className='w-[100%] flex gap-2 mt-[70px]'>
       <Sidebar/>
       <Routes>
         <Route index element={<MainDash/>}/>
