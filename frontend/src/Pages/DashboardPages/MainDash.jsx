@@ -41,7 +41,7 @@ const MainDash = () => {
 useEffect(() => {
   const fetchEvents = async () => {
       try {
-          const response = await axios.get('https://itdevsquadapi.vercel.app/api/events');
+          const response = await axios.get(`https://devsquad-api.vercel.app/api/events`);
           setEvents(response.data);
       } catch (error) {
           console.error('Failed to fetch events:', error);
