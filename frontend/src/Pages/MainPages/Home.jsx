@@ -167,7 +167,7 @@ workshops, this prepares students for the fast evolving world of media and commu
       {/* Container with infinite scroll animation */}
       <div className="flex animate-scroll gap-8">
         {/* Map over the logos array twice to create an infinite loop effect */}
-        {logos.concat(logos,logos).map((logo, index) => (
+        {logos.concat(logos).map((logo, index) => (
           <img
             key={index}
             src={logo}
@@ -222,8 +222,13 @@ workshops, this prepares students for the fast evolving world of media and commu
               <div className="flex justify-start items-center sm:gap-2 gap-1 mt-1">
                 <a href="https://www.instagram.com/rishi.0304/" target='_blank' rel="noopener noreferrer"><FaInstagram className="text-[18px] sm:text-[20px]  hover:text-[#fe8150] hover:cursor-pointer" /></a>
                 <a href="https://www.instagram.com/rishi.0304/" target='_blank' rel="noopener noreferrer"><FaTwitter className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
+<<<<<<< HEAD
                 <a href="https://www.linkedin.com/in/rishitha-reddy-sanapathi-4b13a52b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' rel="noopener noreferrer"><FaLinkedin className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
                 <a href="https://github.com/RajeshJinagam" target='_blank' rel="noopener noreferrer"><FaGithub className="text-[18px] sm:text-[20px]  hover:text-slate-600 hover:cursor-pointer" /></a>
+=======
+                <a href="https://www.linkedin.com/in/me/" target='_blank' rel="noopener noreferrer"><FaLinkedin className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
+                <a href="https://github.com/rishi-a18" target='_blank' rel="noopener noreferrer"><FaGithub className="text-[18px] sm:text-[20px]  hover:text-slate-600 hover:cursor-pointer" /></a>
+>>>>>>> ac4115e31171c7fe906bc07004bb83e46e348442
               </div>
             </div>
           </div>

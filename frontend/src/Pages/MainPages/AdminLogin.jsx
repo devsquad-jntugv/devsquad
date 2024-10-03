@@ -82,7 +82,6 @@ const AdminLogin = () => {
   const handleDeleteEvent = async (id) => {
     try {
       await axios.delete(`https://devsquad-api.vercel.app/api/events/${id}`);
-      await axios.delete(`https://devsquad-api.vercel.app/api/events/${id}`);
       setEvents(events.filter(event => event._id !== id));
       setSuccessMessage('Event deleted successfully!');
     } catch (error) {
