@@ -2,6 +2,7 @@ import React from 'react'
 import { Backgrounds } from '../../Assets/assets'
 const Contact = () => {
   return (
+    <>
     <div className='w-[100%] mx-auto mt-6'>
       <section className='mt-9 py-16 px-8'>
         <div className='flex flex-col sm:flex sm:flex-row items-center gap-3'>
@@ -23,10 +24,11 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <footer className="py-4 px-4 bg-slate-200">
+      </div>
+       <footer className="py-4 px-4 bg-slate-200">
        <p className="text-center font-medium text-sm mt-4">Copyright ©2024 All rights reserved | JNTU-GV College of Engineering Vizianagaram</p>
        </footer>
-    </div>
+    </>
   )
 }
 
