@@ -20,7 +20,7 @@ const EventPieChart = () => {
           '#4bc0c0',
         ],
         borderColor: '#fff',
-        borderWidth: 1,
+        borderWidth:1,
       },
     ],
   };

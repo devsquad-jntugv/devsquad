@@ -13,7 +13,7 @@ const BarChart = () => {
         data: [70],
         backgroundColor: ['#36a2eb'],
         borderColor: '#fff',
-        borderWidth: 1,
+        borderWidth:1,
       },
     ],
   };

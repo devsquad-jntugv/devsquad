@@ -16,7 +16,7 @@ const BarChart = () => {
             '#36a2eb',  
             '#4bc0c0',],
         borderColor: '#fff',
-        borderWidth: 1,
+        borderWidth:1,
       },
     ],
   };
