@@ -216,12 +216,12 @@ workshops, this prepares students for the fast evolving world of media and commu
           <div className="py-2 px-2 flex sm:flex-col lg:flex-row w-[100%] sm:gap-2 gap-3 lg:justify-start sm:items-center items-center shadow-md shadow-gray-500 rounded-sm hover:translate-y-[-12px] duration-300">
             <img className=" rounded-full sm:w-[150px] sm:h-[150px] lg:w-[170px] lg:h-[170px] w-[120px] h-[120px]" src={OverallStudents.Secretary} alt="/" />
             <div className="lg:ml-[6px] flex flex-col lg:justify-start sm:justify-center sm:items-center lg:items-start gap-1">
-              <h1 className="sm:text-[22px] text-[20px] font-bold">S.Rishita</h1>
+              <h1 className="sm:text-[22px] text-[20px] font-bold">S.Rishitha</h1>
               <h2 className="sm:text-[20px] text-[18px] font-medium text-purple-500">Secretary</h2>
               <h2 className="text-[18px] font-medium">3rd Year,IT</h2>
               <div className="flex justify-start items-center sm:gap-2 gap-1 mt-1">
-                <a href="https://www.instagram.com/rishi.0304/" target='_blank' rel="noopener noreferrer"><FaInstagram className="text-[18px] sm:text-[20px]  hover:text-[#fe8150] hover:cursor-pointer" /></a>
-                <a href="https://www.instagram.com/rishi.0304/" target='_blank' rel="noopener noreferrer"><FaTwitter className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
+                <a href="https://www.instagram.com/_rishi.0304_?igsh=MTYwbnJmY21xcG84NA==" target='_blank' rel="noopener noreferrer"><FaInstagram className="text-[18px] sm:text-[20px]  hover:text-[#fe8150] hover:cursor-pointer" /></a>
+                <a href="https://www.instagram.com/_rishi.0304_?igsh=MTYwbnJmY21xcG84NA==" target='_blank' rel="noopener noreferrer"><FaTwitter className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
                 <a href="https://www.linkedin.com/in/rishitha-reddy-sanapathi-4b13a52b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' rel="noopener noreferrer"><FaLinkedin className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
                 <a href="https://github.com/rishi-a18" target='_blank' rel="noopener noreferrer"><FaGithub className="text-[18px] sm:text-[20px]  hover:text-slate-600 hover:cursor-pointer" /></a>
               </div>
