@@ -1,12 +1,12 @@
-import { useState,useEffect } from 'react';
-import axios from 'axios'
-import { Pie } from 'react-chartjs-2';
+//import { useState,useEffect } from 'react';
+//import axios from 'axios'
+//import { Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 ChartJS.register(ArcElement, Tooltip, Legend);
 const EventPieChart = ( {ClubName}) => {
-  const [events,setEvents]=useState([]);
-    const [errorMessage,setErrorMessage]=useState(null);
-    useEffect(() => {
+  //const [events,setEvents]=useState([]);
+   // const [errorMessage,setErrorMessage]=useState(null);
+    /*useEffect(() => {
         const fetchEvents = async (ClubName) => {
             try {
                 const response = await axios.get(`https://itdevsquadapi.vercel.app/api/events`);
@@ -18,8 +18,8 @@ const EventPieChart = ( {ClubName}) => {
             }
         };
         fetchEvents(ClubName);
-    }, [ClubName]);
-  const chartData = {
+    }, [ClubName]);*/
+ /* const chartData = {
     labels: events.map(item => item.eventName),
     datasets: [
         {
@@ -46,11 +46,11 @@ const EventPieChart = ( {ClubName}) => {
             borderWidth: 1,
         },
     ],
-};
+};*/
 return (
   <div className="py-3 px-2 flex flex-col items-center justify-center w-[100%]">
     <h2 className="text-blue-500 text-xl font-medium px-2 py-2">Event Participation (Pie Chart)</h2>
-    {errorMessage ? (
+    {/*{errorMessage ? (
       <p className="text-red-500">Error in Loading Events</p>
     ) : events.length > 0 ? (
       <div className="sm:h-[300px] h-[230px] w-[100%] mt-3 lg:ml-[20px] sm:ml[10px] flex items-center justify-center">
@@ -58,7 +58,8 @@ return (
       </div>
     ) : (
       <p>No events registered</p>
-    )}
+    )}*/}
+    <p>No events registered</p>
   </div>
 );
 

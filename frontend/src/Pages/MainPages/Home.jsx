@@ -13,7 +13,7 @@ const Home = () => {
     Collaboration.Drishya,Collaboration.Infosys,Collaboration.Coursera,Collaboration.Nptel,Collaboration.Edx,Collaboration.oracle
   ];
   return (
-    <div className="max-w-[1700px] mx-auto relative">
+    <div className="w-[100%] mx-auto relative">
       <section className="relative w-full h-screen py-4">
         {/* Text or content to be displayed above the image */}
         <div className="relative z-5 text-center top-[46%] left-[50%] translate-x-[-50%] translate-y-[-46%] grid grid-cols-1 gap-1">
@@ -206,10 +206,10 @@ workshops, this prepares students for the fast evolving world of media and commu
               <h2 className="sm:text-[20px] text-[18px] font-medium text-purple-500">Vice President</h2>
               <h2 className="text-[18px] font-medium">3rd Year,IT</h2>
               <div className="flex justify-start items-center sm:gap-2 gap-1 mt-1">
-                <a href="https://www.instagram.com/mr_innocent_k_i_n_g?igsh=azlrMjI2Ym90Ym41" target='_blank' rel="noopener noreferrer"><FaInstagram className="text-[18px] sm:text-[20px]  hover:text-[#fe8150] hover:cursor-pointer" /></a>
-                <a href="https://www.instagram.com/mr_innocent_k_i_n_g?igsh=azlrMjI2Ym90Ym41" target='_blank' rel="noopener noreferrer"><FaTwitter className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
-                <a href="https://www.linkedin.com/in/jinagam-rajesh-218022299" target='_blank' rel="noopener noreferrer"><FaLinkedin className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
-                <a href="https://github.com/RajeshJinagam" target='_blank' rel="noopener noreferrer"><FaGithub className="text-[18px] sm:text-[20px]  hover:text-slate-600 hover:cursor-pointer" /></a>
+                <a href="https://www.instagram.com/m.a.n.i._8?igsh=cWcyZTg4eWx5ZmRz" target='_blank' rel="noopener noreferrer"><FaInstagram className="text-[18px] sm:text-[20px]  hover:text-[#fe8150] hover:cursor-pointer" /></a>
+                <a href="https://www.instagram.com/m.a.n.i._8?igsh=cWcyZTg4eWx5ZmRz" target='_blank' rel="noopener noreferrer"><FaTwitter className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
+                <a href="https://www.linkedin.com/in/kancharana-manikanta-b2063b313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' rel="noopener noreferrer"><FaLinkedin className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
+                <a href="https://github.com/Manikancharana" target='_blank' rel="noopener noreferrer"><FaGithub className="text-[18px] sm:text-[20px]  hover:text-slate-600 hover:cursor-pointer" /></a>
               </div>
             </div>
           </div>
@@ -220,9 +220,9 @@ workshops, this prepares students for the fast evolving world of media and commu
               <h2 className="sm:text-[20px] text-[18px] font-medium text-purple-500">Secretary</h2>
               <h2 className="text-[18px] font-medium">3rd Year,IT</h2>
               <div className="flex justify-start items-center sm:gap-2 gap-1 mt-1">
-                <a href="https://www.instagram.com/m.a.n.i._8?igsh=cWcyZTg4eWx5ZmRz" target='_blank' rel="noopener noreferrer"><FaInstagram className="text-[18px] sm:text-[20px]  hover:text-[#fe8150] hover:cursor-pointer" /></a>
-                <a href="https://www.instagram.com/mr_innocent_k_i_n_g?igsh=azlrMjI2Ym90Ym41" target='_blank' rel="noopener noreferrer"><FaTwitter className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
-                <a href="https://www.linkedin.com/in/kancharana-manikanta-b2063b313?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' rel="noopener noreferrer"><FaLinkedin className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
+                <a href="https://www.instagram.com/rishi.0304/" target='_blank' rel="noopener noreferrer"><FaInstagram className="text-[18px] sm:text-[20px]  hover:text-[#fe8150] hover:cursor-pointer" /></a>
+                <a href="https://www.instagram.com/rishi.0304/" target='_blank' rel="noopener noreferrer"><FaTwitter className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
+                <a href="https://www.linkedin.com/in/rishitha-reddy-sanapathi-4b13a52b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target='_blank' rel="noopener noreferrer"><FaLinkedin className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
                 <a href="https://github.com/RajeshJinagam" target='_blank' rel="noopener noreferrer"><FaGithub className="text-[18px] sm:text-[20px]  hover:text-slate-600 hover:cursor-pointer" /></a>
               </div>
             </div>

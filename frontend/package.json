@@ -43,17 +43,6 @@
   },
   "devDependencies": {
     "tailwindcss": "^3.4.11"
-  },
-  "proxy": {
-    "/api_local": {
-      "target": "https://itdevsquadapi.vercel.app",
-      "changeOrigin": true,
-      "pathRewrite": { "^/api": "" }
-    },
-    "/api": {
-      "target": "http://yuktadevsquadapi.vercel.app",
-      "changeOrigin": true,
-      "pathRewrite": { "^/api2": "" }
-    }
   }
-}
+  }
+

@@ -23,7 +23,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <footer className="py-4 px-4 bg-slate-200">
+      <footer className="py-4 px-4 bg-slate-200 w-full absolute bottom-0">
        <p className="text-center font-medium text-sm mt-4">Copyright ©2024 All rights reserved | JNTU-GV College of Engineering Vizianagaram</p>
        </footer>
     </div>

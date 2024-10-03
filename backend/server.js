@@ -4,10 +4,11 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors({
-    origin:['https://yuktadevsquad.vercel.app'],
+    origin:['https://yuktadevsquad.vercel.app','http://localhost:3000'],
     methods:['POST',"GET","DELETE","PUT"],
     credentials:true
 }))
+app.options('*', cors());  // Handle preflight requests
 app.use(express.json());
 
 // Mongoose schema for Event
