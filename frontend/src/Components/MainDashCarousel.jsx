@@ -71,7 +71,7 @@ const scrollRight = () => {
 };
   // Scroll to the left
   return (
-    <div className="flex relative lg:w-[1200px] sm:w-[700px] w-[400px] items-center gap-4 z-0">
+    <div className="relative w-full flex items-center gap-4">
       {/* Left Button */}
       <button
         onClick={scrollLeft}
