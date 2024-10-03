@@ -13,7 +13,7 @@ const Home = () => {
     Collaboration.Drishya,Collaboration.Infosys,Collaboration.Coursera,Collaboration.Nptel,Collaboration.Edx,Collaboration.oracle
   ];
   return (
-    <div className="max-w-[1700px] mx-auto relative">
+    <div className="w-[100%] mx-auto relative">
       <section className="relative w-full h-screen py-4">
         {/* Text or content to be displayed above the image */}
         <div className="relative z-5 text-center top-[46%] left-[50%] translate-x-[-50%] translate-y-[-46%] grid grid-cols-1 gap-1">
