@@ -129,34 +129,6 @@ workshops, this prepares students for the fast evolving world of media and commu
           </div>
         </div>
       </section>
-      <section className="py-12 px-8">
-        <div className="flex justify-center items-center gap-2">
-          <div className="py-4 px-2 rounded-sm shadow-lg shadow-gray-600">
-            <h1 className="text-center text-red-700 sm:text-2xl font-medium">
-              UpComing Events
-            </h1>
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-2">
-              <div className="py-2 px-2 sm:w-[300px] sm:h-[300px] w-[200px] h-[200px]">
-                <img className="bg-cover rounded-full" src={Logos.Squad} alt="/" />
-              </div>
-              <div className="flex flex-col items-center gap-3 mr-2">
-                <h2 className="text-xl sm:text-2xl text-purple-600 font-medium">
-                  Yukta DevSquad Inauguration
-                </h2>
-                <p className="text-lg sm:text-xl font-medium">
-                  Event Time And Place
-                </p>
-                <p className="text-[17px] sm:text-[19px] font-serif">
-                  Time:Oct-4th 9:30 AM
-                </p>
-                <p className="text-center text-lg sm:text-xl font-medium">
-                  JNTU-GV Vizianagaram Auditorium
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section className="w-[100%] py-16 px-8 overflow-x-hidden">
         <div className="flex flex-col gap-3 justify-center items-center">
           <h1 className="text-xl sm:text-2xl lg:text-3xl text-purple-600 font-bold">

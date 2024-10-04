@@ -15,7 +15,7 @@ const MainCarousel = () => {
     {
         id:2,
         image:OverallStudents.Secretary,
-        Name:'S.Rishita',
+        Name:'S.Rishitha',
         title:'Secratary',
         Year:'3rd Year',
         Branch:'Information Technology',
