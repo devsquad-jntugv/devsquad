@@ -53,7 +53,7 @@ const AdminLogin = () => {
         setSuccessMessage('Event updated successfully!');
       } else {
         // If adding, create a new event
-        const response = await axios.post(`/api/events`, newEvent);
+        const response = await axios.post(`https://backend-crud-api-gray.vercel.app/api/events`, newEvent);
         console.log(response.data)
         setEvents([...events, response.data]);
         setSuccessMessage('Event added successfully!');
