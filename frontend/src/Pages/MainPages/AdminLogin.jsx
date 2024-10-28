@@ -4,7 +4,7 @@ import { FaTimes } from 'react-icons/fa';
 
 const AdminLogin = () => {
   const [subclub, setSubclub] = useState(''); // To select subclub
-  const [eventName, setEventName] = useState('');
+  const [eventname, setEventName] = useState('');
   const [participants, setParticipants] = useState('');
   const [endDate, setEndDate] = useState('');
   const [conductDate, setConductDate] = useState('');
@@ -18,7 +18,7 @@ const AdminLogin = () => {
   useEffect(() => {
     const fetchEvents = async () => {
       try {
-        const response = await axios.get(`https://devsquad-api.vercel.app/api/events`);
+        const response = await axios.get(`https://backend-crud-api-gray.vercel.app/api/events`);
         setEvents(response.data); // Set fetched events to state
       } catch (error) {
         console.error('Failed to fetch events:', error);
@@ -32,14 +32,14 @@ const AdminLogin = () => {
   // Handle adding or editing an event
   const handleEventSubmit = async (e) => {
     e.preventDefault();
-    if (!subclub || !eventName || !participants || !conductDate || !endDate) {
+    if (!subclub || !eventname || !participants || !conductDate || !endDate) {
       alert('Please fill all fields');
       return;
     }
 
     const newEvent = {
-      clubName: subclub, // Ensure correct naming to match backend schema
-      eventName,
+      clubname: subclub, // Ensure correct naming to match backend schema
+      eventname,
       participants,
       conductDate: new Date(conductDate), // Ensure it's a Date object
       endDate: new Date(endDate),
@@ -47,7 +47,7 @@ const AdminLogin = () => {
     try {
       if (editingEventId) {
         // If editing, update the event
-        const response = await axios.put(`https://devsquad-api.vercel.app/api/events/${editingEventId}`, newEvent);
+        const response = await axios.put(`https://backend-crud-api-gray.vercel.app/api/events/${editingEventId}`, newEvent);
       
         setEvents(events.map(event => event._id === editingEventId ? response.data : event));
         setSuccessMessage('Event updated successfully!');
@@ -70,9 +70,9 @@ const AdminLogin = () => {
   // Open the edit modal with the event's data pre-filled
   const handleEditEvent = (event) => {
     setEditingEventId(event._id); // Set the editing ID
-    setEventName(event.eventName);
+    setEventName(event.eventname);
     setParticipants(event.participants);
-    setSubclub(event.clubName);
+    setSubclub(event.clubname);
     setConductDate(event.conductDate.split('T')[0]);
     setEndDate(event.endDate.split('T')[0]); // Format the date correctly
     setShowModal(true); // Show the modal
@@ -81,7 +81,7 @@ const AdminLogin = () => {
   // Handle deleting an event
   const handleDeleteEvent = async (id) => {
     try {
-      await axios.delete(`https://devsquad-api.vercel.app/api/events/${id}`);
+      await axios.delete(`https://backend-crud-api-gray.vercel.app/api/events/${id}`);
       setEvents(events.filter(event => event._id !== id));
       setSuccessMessage('Event deleted successfully!');
     } catch (error) {
@@ -131,7 +131,7 @@ const AdminLogin = () => {
           <input
             type="text"
             className="mt-1 block w-full border border-gray-300 p-2 rounded-md"
-            value={eventName}
+            value={eventname}
             onChange={(e) => setEventName(e.target.value)}
           />
         </div>
@@ -190,8 +190,8 @@ const AdminLogin = () => {
             <tbody>
               {events.map((event) => (
                 <tr key={event._id}>
-                  <td className="text-center px-2">{event.clubName}</td>
-                  <td className="text-center px-2">{event.eventName}</td>
+                  <td className="text-center px-2">{event.clubname}</td>
+                  <td className="text-center px-2">{event.eventname}</td>
                   <td className="text-center px-2">{event.participants}</td>
                   <td className="text-center px-2">{event.conductDate?event.conductDate.split('T')[0] : ''}</td>
                   <td className="text-center px-2">{event.endDate?event.endDate.split('T')[0] : 'N/A'}</td>
@@ -245,7 +245,7 @@ const AdminLogin = () => {
             <input
               type="text"
               className="mt-1 block w-full border border-gray-300 p-2 rounded-md"
-              value={eventName}
+              value={eventname}
               onChange={(e) => setEventName(e.target.value)}
             />
           </div>
