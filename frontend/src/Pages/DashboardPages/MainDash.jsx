@@ -1,13 +1,15 @@
 import { ArcElement, Chart as ChartJS, Legend, Tooltip } from 'chart.js';
-import React from 'react';
+import { Pie,Bar } from 'react-chartjs-2';
+import React,{useState,useEffect} from 'react';
 import { Logos, OverallStudents } from '../../Assets/assets';
 import MainCarousel from '../../Components/MainDashCarousel';
-import MainBarchart from '../../Components/ChartsFolder/MainBarchart';
-import MainPiechart from '../../Components/ChartsFolder/MainPiechart';
+import axios from "axios"
+//import MainBarchart from '../../Components/ChartsFolder/MainBarchart';
+//import MainPiechart from '../../Components/ChartsFolder/MainPiechart';
 ChartJS.register(ArcElement, Tooltip, Legend);
 const MainDash = () => {
- // const [events,setEvents]=useState([]);
-  //  const [errorMessage,setErrorMessage]=useState(null);
+ const [events,setEvents]=useState([]);
+ const [errorMessage,setErrorMessage]=useState(null);
   const clubs=[
     {
     'id':1,
@@ -38,11 +40,11 @@ const MainDash = () => {
     'image':Logos.Arts
   },
 ]
-//const API_BASE_URL='https://localhost/api/events'
-/*useEffect(() => {
+const API_BASE_URL='https://backend-crud-api-gray.vercel.app/api/events'
+useEffect(() => {
   const fetchEvents = async () => {
       try {
-          const response = await axios.get(`${API_BASE_URL}/api/events`, { withCredentials: true });
+          const response = await axios.get(`${API_BASE_URL}`);
           setEvents(response.data);
       } catch (error) {
           console.error('Failed to fetch events:', error);
@@ -50,14 +52,14 @@ const MainDash = () => {
       }
   };
   fetchEvents();
-}, []);*/
+}, []);
 // Count the number of events for each club
-/*const clubEventCount = events.reduce((acc, event) => {
-  acc[event.clubName] = (acc[event.clubName] || 0) + 1;
+const clubEventCount = events.reduce((acc, event) => {
+  acc[event.clubname] = (acc[event.clubname] || 0) + 1;
   return acc;
-}, {});*/
+}, {});
 
-/*const chartData = {
+const chartData = {
   labels: Object.keys(clubEventCount),
   datasets: [
     {
@@ -84,7 +86,7 @@ const MainDash = () => {
       borderWidth: 1,
     },
   ],
-};*/
+};
   return (
     <>
       <section className='w-[100%] flex flex-col items-start justify-center gap-2 px-2 mt-14 sm:mt-3 overflow-hidden'>
@@ -128,7 +130,7 @@ const MainDash = () => {
         </div>
         <div className='w-[100%] flex sm:flex sm:flex-row flex-col items-center justify-center gap-2 shadow-md shadow-slate-600 rounded-md mb-2'>
           <div className="py-3 px-2 flex flex-col items-center justify-center w-[100%]">
-           {/* {errorMessage ? (
+            {errorMessage ? (
               <p className="text-red-500">Error in Loading Events</p>
             ) : events.length > 0 ? (
               <div className="sm:h-[300px] h-[230px] w-[100%] mt-3 lg:ml-[20px] sm:ml[10px] flex items-center justify-center">
@@ -136,13 +138,11 @@ const MainDash = () => {
               </div>
             ) : (
              <p>No events registered</p>
-             )}*/}
-             <MainPiechart/>
-             
+             )}
           </div>
           <div className="py-3 px-2 flex flex-col items-center justify-center w-[100%]">
             
-           {/* {errorMessage ? (
+            {errorMessage ? (
               <p className="text-red-500">Error in Loading Events</p>
             ) : events.length > 0 ? (
               <div className="sm:h-[300px] h-[230px] w-[100%] mt-3 lg:ml-[20px] sm:ml[10px] flex items-center justify-center">
@@ -150,8 +150,7 @@ const MainDash = () => {
               </div>
             ) : (
              <p>No events registered</p>
-             )}*/}
-             <MainBarchart/>
+             )}
           </div>
         </div>
       </section>

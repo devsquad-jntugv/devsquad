@@ -1,12 +1,12 @@
 import React from 'react'
 import { Logos,FacultyCoordinators,SubClubCoordinators} from '../../Assets/assets';
-//import EventPieChart from '../../Components/EventPieChart';
-//import EventBarChart from '../../Components/EventBar';
+import EventPieChart from '../../Components/EventPieChart';
+import EventBarChart from '../../Components/EventBar';
 import AiEventAnaysis from '../../Components/All Events Analysis/AiEventAnaysis';
-import AiEventBarchart from '../../Components/ChartsFolder/AiEventBarchart'
-import AiPiechart from '../../Components/ChartsFolder/AiPiechart'
+//import AiEventBarchart from '../../Components/ChartsFolder/AiEventBarchart'
+//import AiPiechart from '../../Components/ChartsFolder/AiPiechart'
 const AiDash = () => {
-  //const ClubName='AI-ML';
+  const ClubName='AI-ML';
   return (
     <div className='w-[100%] py-2 px-2 flex flex-col gap-2 sm:mt-8 lg:mt-0 mt-10'>
       <div className='px-1 flex justify-start items-center ml-[-10px]'>
@@ -59,10 +59,10 @@ const AiDash = () => {
         {/*Event Table*/}
         <AiEventAnaysis/>
         <div className='grid sm:grid sm:grid-cols-2 items-center justify-center gap-2 shadow-md shadow-slate-600 rounded-md'>
-           {/*<EventPieChart ClubName={ClubName}/>
-           <EventBarChart ClubName={ClubName}/>*/}
-           <AiPiechart/>
-           <AiEventBarchart/>
+           <EventPieChart ClubName={ClubName}/>
+           <EventBarChart ClubName={ClubName}/>
+           {/*<AiPiechart/>
+           <AiEventBarchart/>*/}
         </div>
     </div>
   )
