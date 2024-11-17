@@ -49,6 +49,10 @@ import Infosys from '../Assets/infosyslogo.jpg'
 import Edx from '../Assets/edxLogo.png'
 import Coursera from '../Assets/courseraLogo.jpg'
 import Drishya from '../Assets/Drishya.jpg'
+import CyberEvent from '../Assets/CyberEvent.jpg'
+import EcoPulse from '../Assets/EcoPulse.jpg'
+import Outer1 from '../Assets/Outer1.jpg'
+import Portfolio from '../Assets/Portfolio.jpg'
  const Logos={
     "ACM":acm,
     'AI':AiMl,
@@ -106,7 +110,11 @@ const EventsCond={
     'codeQuest1':codeQuest1,
     'FoodDrive':FoodDrive,
     'PosterPresent':Poster,
-    'AiTools':AiTools
+    'AiTools':AiTools,
+    'Cyber1':CyberEvent,
+    'EcoPulse':EcoPulse,
+    'Outer1':Outer1,
+    'Portfolio':Portfolio,
 }
 const Collaboration={
    'oracle':Oracle,

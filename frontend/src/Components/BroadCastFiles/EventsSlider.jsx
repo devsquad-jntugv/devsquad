@@ -48,6 +48,42 @@ const EventsSlider = () => {
       startDate: '2024-9-30',
       endDate: '2024-9-30',
     },
+    {
+      id:5,
+      title:'Cyber Awareness',
+      shortdescription:'The "Think Before You Click" program, hosted by the Department of Information Technology at JNTU-GV College of Engineering, Vizianagaram.',
+      image:EventsCond.Cyber1,
+      description:"a cyber awareness initiative designed to teach participants about staying cautious online and avoiding potentially harmful links. It promotes best practices for digital safety. And remember, hackers hate to see you here, getting informed and prepared—they never expected you to be this smart!",
+      startDate:'2024-11-08',
+      endDate:'2024-11-08'
+    },
+    {
+      id:6,
+      title:'Eco-Pulse',
+      shortdescription:'The ECO PULSE "Clean Campus, Green Future" event, organized by the Yuva Seva Sankalpam club at JNTUGV University.',
+      image:EventsCond.EcoPulse,
+      description:"The initiative aims to promote environmental awareness and maintain a cleaner, greener campus. Faculty, students, and volunteers from various departments will actively participate, working together to clean and beautify the university grounds. The event reflects the club's dedication to community service and sustainable practices, fostering a spirit of teamwork and environmental responsibility among all participants.",
+      startDate:'2024-11-09',
+      endDate:'2024-11-09'
+    },
+    {
+      id:7,
+      title:'Portfolio and Resume Building',
+      shortdescription:'The Portfolio and Resume Building "Digital Footprint" event, organized by the FST club at JNTUGV University.',
+      image:EventsCond.Portfolio,
+      description:'This workshop provided participants with the tools and techniques necessary for constructing professional portfolios and resumes. Industry experts shared insights on current trends and best practices in resume writing and portfolio presentation.Interactive sessions included practical exercises for resume tailoring, digital portfolio creation, and feedback sessions.',
+      startDate:'2024-11-16',
+      endDate:'2024-11-16'
+    },
+    {
+      id:8,
+      title:'Design Thinking',
+      shortdescription:"Design thinking is a user-centred, problem-solving approach that fosters innovation by focusing on understanding the user's needs and experiences.",
+      image:EventsCond.Outer1,
+      description:'This iterative process encourages creative solutions, as each stage can be revisited and refined based on user feedback. By combining empathy, experimentation, an feedback, design thinking promotes practical and human-centred innovations across industries',
+      startDate:'2024-11-08',
+      endDate:'2024-11-08',
+    }
   ];
 
   // Function to scroll left
