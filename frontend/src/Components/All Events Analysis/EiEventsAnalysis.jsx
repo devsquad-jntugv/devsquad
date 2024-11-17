@@ -24,7 +24,7 @@ const EventsAnalysis = () => {
             <h1 className='text-xl text-[#3951cc] font-medium py-2'>Events Conducted Before</h1>
             {errorMessage && <div className="py-2 border border-red-500 font-medium rounded-md">{errorMessage}</div>}
             <div className='grid justify-around bg-slate-300 rounded-md px-2'>
-                <div className='grid grid-cols-[1fr,1fr,1fr,1fr] justify-between py-2 gap-3 border border-transparent border-b-black'>
+                <div className='grid grid-cols-[1fr,1fr,1fr,1fr,1fr] justify-between py-2 gap-3 border border-transparent border-b-black'>
                     <p className='text-left px-2'>Event Name</p>
                     <p className='text-center'>Number Of Participants</p>
                     <p className='sm:ml-[30px] ml-[10px]'>Date of Conduct</p>
