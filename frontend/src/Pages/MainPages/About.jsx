@@ -9,7 +9,7 @@ const About = () => {
         <div className='h-[4px] w-[180px] bg-slate-600 rounded-sm mb-3'></div>
         <div className='flex flex-col sm:flex sm:flex-row justify-center items-center gap-2 mb-3'>
           <div className='flex-1'>
-          <p className='text-[18px] sm:text-[20px] font-medium'>The Information Technology (IT)
+          <p className='text-[16px] sm:text-[18px] font-normal'>The Information Technology (IT)
 branch at JNTU-GV College of
 Engineering, located in the city of
 Vizianagaram, is dedicated to
@@ -49,7 +49,7 @@ feedback.</p></div>
         <div className='h-[4px] w-[250px] bg-slate-600 rounded-sm mb-3'>
         </div>
         <div className='flex flex-col sm:flex-row justify-center'>
-          <p className='text-[18px] sm:text-[20px] font-medium'>The club engages students through a
+          <p className='text-[16px] sm:text-[18px] font-normal'>The club engages students through a
 wide range of activities and
 initiatives that are designed to
 enhance both their technical

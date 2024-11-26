@@ -47,7 +47,7 @@ const Home = () => {
             src={Logos.Squad}
             alt=""
           />
-          <p className="text-[20px] font-medium">
+          <p className="sm:text-[18px] font-normal text-[16px]">
           Yukta DevSquad engages students through a
 wide range of activities and
 initiatives that are designed to
@@ -80,7 +80,7 @@ members informed and involved.
             <h1 className="text-xl sm:text-2xl lg:text-3xl text-[#432fa3] font-semibold">
               Collaborated With ACM
             </h1>
-            <p className="text-[20px] font-medium">
+            <p className="sm:text-[18px] text-[16px] font-normal">
             Yukta DevSquad serves as the head of all clubs in the IT branch at JNTU-GV (Jawaharlal Nehru Technological University Gurajada Vizianagaram) and has successfully collaborated with the ACM (Association for Computing Machinery) student chapter of the university. Under our Head of the Department leadership, the IT clubs have become more dynamic, promoting technological innovation, peer learning, and professional development. The collaboration with the ACM chapter has allowed students to engage with global tech trends, participate in coding competitions, workshops, and seminars, and foster a community of enthusiastic learners and developers, contributing significantly to the academic and extracurricular growth of the IT branch.
             </p>
             <button className="px-2 sm:px-4 py-2 text-[17px] sm:text-[19px] font-medium text-white rounded-md bg-[#6951e0] sm:w-[250px] w-[200px] shadow-sm shadow-slate-500">
