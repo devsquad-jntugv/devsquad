@@ -85,7 +85,11 @@ const EventsSlider = () => {
       endDate:'2024-11-08',
     }
   ];
-
+  const [searchTerm, setSearchTerm] = useState("");
+  const filteredEvents = Events.filter((Event) => {
+    const matchesSearch = Event.title.toLowerCase().includes(searchTerm.toLowerCase())
+    return matchesSearch;
+  });
   // Function to scroll left
   // Function to open the modal and set the selected event
   const handleReadMore = (event) => {
@@ -100,10 +104,13 @@ const EventsSlider = () => {
 
   return (
     <>
-     <div className='sm:flex sm:flex-row sm:items-center flex-wrap flex-col items-center gap-2 w-[100%] px-3'>
-        {Events.map((item) => (
-              <div className=" w-[350px] py-2 flex flex-col items-center gap-1 shadow-md shadow-gray-400 rounded-md">
-                <div className="w-[340px] h-[210px] hover:cursor-pointer">
+    <div className='flex justify-start items-center w-[100%] py-4 px-4 gap-3'>
+      <div className='w-[100%]'><input type='text' placeholder='Search Events' valuse={searchTerm} onChange={(e)=>setSearchTerm(e.target.value)} className='w-[100%] px-4 py-2  border-[2px] border-gray-500 outline-none focus:border-purple-500 rounded-[5px] text-[16px]'></input></div>
+    </div>
+     <div className='mt-[10px] sm:flex sm:flex-row sm:items-center flex-wrap flex-col items-center justify-center gap-2 w-[100%] px-3'>
+        {filteredEvents.map((item) => (
+              <div className=" w-[360px] py-2 flex flex-col items-center gap-1 shadow-md shadow-gray-400 rounded-md">
+                <div className="w-[350px] h-[210px] hover:cursor-pointer">
                   <img
                     src={item.image}
                     alt={item.title}
