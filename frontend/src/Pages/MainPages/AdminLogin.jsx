@@ -100,13 +100,11 @@ const AdminLogin = () => {
     setEditingEventId(null); // Clear editing ID after operation
   };
   return (
-    <div className={`relative py-8 px-3 w-[100%]  ${showModal ? 'backdrop-blur-lg' : ''}`}>
+    <div className={`relative py-8 px-3 w-[100%] ${showModal ? 'backdrop-blur-lg' : ''}`}>
       <h2 className="text-3xl font-bold mb-4">Admin Dashboard</h2>
       <p>Here you can add events to different subclubs.</p>
-
       {errorMessage && <div className="border border-red-500 rounded-md py-2 bg-red-300 text-black text-lg font-medium ">{errorMessage}</div>}
       {successMessage && <div className="border border-green-500 rounded-md py-2 bg-green-200 text-black text-lg font-medium">{successMessage}</div>}
-
       {/* Event Form */}
       <div className="mt-4 space-y-4">
         <div>

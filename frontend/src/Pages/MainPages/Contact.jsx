@@ -17,6 +17,11 @@ const Contact = () => {
                 <p className='text-[16px] font-medium'>Contact our coordinators through E-Mail</p>
                 <p  className='text-[18px] font-medium'>Mail :yuktadevsquad@gmail.com </p>
               </div>
+              <div  className='mr-2 py-8 px-4 shadow-sm shadow-slate-800 rounded-md hover:cursor-pointer'>
+                <h2 className='text-lg sm:text-xl text-purple-700 font-semibold mb-2'>Developer details</h2>
+                <p className='text-[16px] font-medium'>Contact Developer through E-Mail</p>
+                <p  className='text-[18px] font-medium'>Mail :varunkumarsunkaraboina@gmail.com</p>
+              </div>
             </div>
           </div>
           <div className='flex-1'>
