@@ -20,7 +20,7 @@ const Contact = () => {
               <div  className='mr-2 py-8 px-4 shadow-sm shadow-slate-800 rounded-md hover:cursor-pointer'>
                 <h2 className='text-lg sm:text-xl text-purple-700 font-semibold mb-2'>Developer details</h2>
                 <p className='text-[16px] font-medium'>Contact Developer through E-Mail</p>
-                <p  className='text-[18px] font-medium'>Mail :varunkumarsunkaraboina@gmail.com</p>
+                <p  className='text-[17px] font-medium text-blue-600'>varunkumarsunkaraboina@gmail.com</p>
               </div>
             </div>
           </div>
