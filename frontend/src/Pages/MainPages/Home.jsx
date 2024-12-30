@@ -37,11 +37,11 @@ const Home = () => {
         />
       </section>
       {/*ABout*/}
-      <section className="w-[100%] py-16 px-14">
+      <section className="w-[100%] py-16 sm:px-14 px-5">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl text-[#432fa3] font-medium py-2 border border-transparent border-b-2 border-b-purple-600">
           Why Yukta <span>DevSquad</span>
         </h1>
-        <div className="py-2 px-2 flex flex-col sm:flex sm:flex-row justify-center items-center gap-2">
+        <div className="py-2 px-2 flex flex-col sm:flex sm:flex-row justify-center sm:items-center items-start gap-2">
           <img
             className="sm:w-[350px] sm:h-[350px] rounded-full bg-cover"
             src={Logos.Squad}
