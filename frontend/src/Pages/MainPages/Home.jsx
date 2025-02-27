@@ -238,7 +238,7 @@ workshops, this prepares students for the fast evolving world of media and commu
             </div>
           </div>
         </div>
-        <p className="text-center font-medium text-sm mt-4">Copyright ©2024 All rights reserved | JNTU-GV College of Engineering Vizianagaram</p>
+        <p className="text-center font-medium text-sm mt-4">Copyright ©2024 All rights reserved Varun Kumar Sunkaraboina</p>
       </footer>
     </div>
   );
