@@ -89,7 +89,7 @@ const OverallStudents = {
   Officer: Officer,
   NewMember: NewMember,
   AnotherMember: AnotherMember,
-  Hod: BinduMam,
+  Hod: "https://jntugvcev.edu.in/uploads/departments/faculty_photos/it/dr--tirimula-rao-benala.jpg",
 };
 
 const SubClubCoordinators = {

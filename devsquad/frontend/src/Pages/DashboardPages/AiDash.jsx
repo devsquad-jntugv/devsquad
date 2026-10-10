@@ -21,7 +21,7 @@ const AiDash = () => {
                 <img src={FacultyCoordinators.AI} className='h-[70px] w-[70px] sm:h-[100px] sm:w-[100px] rounded-full' alt=''/>
                 <div className='flex flex-col gap-2 mr-2 mb-2'>
                   <h2 className='text-lg font-semibold text-black'>Dr. Ch.Bindu Madhuri</h2>
-                  <p className='text-sm sm:text-lg font-medium text-slate-600'>Asst.Prof, & HoD</p>
+                  <p className='text-sm sm:text-lg font-medium text-slate-600'>Asst.Prof</p>
                   <p className='text-sm sm:text-lg font-sans text-slate-600'>Dept.of IT</p>
                 </div>
               </div>
@@ -36,7 +36,7 @@ const AiDash = () => {
                     <div className='flex flex-col gap-2 px-2'>
                       <h1 className='text-lg text-[#00df9a] font-medium'>President</h1>
                       <h2 className='text-lg font-sans text-black'>M.Lokesh </h2>
-                      <p className='text-sm sm:text-lg font-sans text-slate-600'>3rd year(IT)</p>
+                      <p className='text-sm sm:text-lg font-sans text-slate-600'>4th year(IT)</p>
                     </div>
                   </div>
                   <div className='flex justify-start items-center sm:flex-row gap-2 sm:justify-center sm:items-center'>
@@ -44,7 +44,7 @@ const AiDash = () => {
                     <div className='flex flex-col gap-2 px-2'>
                       <h1  className='text-lg text-[#00df9c] font-medium'>Vice President</h1>
                       <h2 className='text-lg font-sans text-black'>T.Madhu Sarvani</h2>
-                      <p className='text-sm sm:text-lg font-sans text-slate-600'>3rd year(IT)</p>
+                      <p className='text-sm sm:text-lg font-sans text-slate-600'>4th year(IT)</p>
                     </div>
                   </div>
               </div>

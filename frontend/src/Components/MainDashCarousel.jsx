@@ -10,7 +10,7 @@ const MainCarousel = () => {
       image: OverallStudents.VicePresident,
       Name: "Y.Ghana Sathya Karthik",
       title: "Vice President",
-      Year: "3rd Year",
+      Year: "4th Year",
       Branch: "Information Technology",
     },
     {
@@ -18,7 +18,7 @@ const MainCarousel = () => {
       image: OverallStudents.Secretary,
       Name: "V.Charu Brunda",
       title: "Secratary",
-      Year: "3rd Year",
+      Year: "4th Year",
       Branch: "Information Technology",
     },
     {
@@ -26,7 +26,7 @@ const MainCarousel = () => {
       image: OverallStudents.Treasurer,
       Name: "N.Saroj",
       title: "Treasurer",
-      Year: "3rd Year",
+      Year: "4th Year",
       Branch: "Information Technology",
     },
 
@@ -36,7 +36,7 @@ const MainCarousel = () => {
       Name: "M.Likhith Kumar",
       titleLine1: "President",
       titleLine2: "(Technical Events)",
-      Year: "3rd Year",
+      Year: "4th Year",
       Branch: "Information Technology",
     },
 
@@ -46,7 +46,7 @@ const MainCarousel = () => {
       Name: "K.Pravallika",
       titleLine1: "Vice President",
       titleLine2: "(Technical Events)",
-      Year: "3rd Year",
+      Year: "4th Year",
       Branch: "Information Technology",
     },
 
@@ -66,7 +66,7 @@ const MainCarousel = () => {
       Name: "Y.Bhavani Kumar",
       titleLine1: "President",
       titleLine2: "(Broadcast)",
-      Year: "3rd Year",
+      Year: "4th Year",
       Branch: "Information Technology",
     },
 
@@ -77,7 +77,7 @@ const MainCarousel = () => {
       Name: "Ch.Sai Rupini",
       titleLine1: "Vice President",
       titleLine2: "(Broadcast)",
-      Year: "3rd Year",
+      Year: "4th Year",
       Branch: "Information Technology",
     },
   ];

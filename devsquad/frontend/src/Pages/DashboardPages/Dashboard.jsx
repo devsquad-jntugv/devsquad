@@ -18,7 +18,7 @@ const Dashboard = () => {
                 <img src={FacultyCoordinators.Ei} className='h-[70px] w-[70px] sm:h-[100px] sm:w-[100px] rounded-full' alt=''/>
                 <div className='flex flex-col gap-2 mr-2 mb-2'>
                   <h2 className='text-lg font-semibold text-black'>Dr. B.Tirimula Rao</h2>
-                  <p className='text-sm sm:text-lg font-medium text-slate-600'>Asst.Prof</p>
+                  <p className='text-sm sm:text-lg font-medium text-slate-600'>Associate Professor & HoD</p>
                   <p className='text-sm sm:text-lg font-sans text-slate-600'>Dept.of IT</p>
                 </div>
               </div>
@@ -33,7 +33,7 @@ const Dashboard = () => {
                     <div className='flex flex-col gap-2 px-2'>
                       <h1 className='text-lg text-[#00df9a] font-medium'>President</h1>
                       <h2 className='text-lg font-sans text-black'>B.Hema sagar</h2>
-                      <p className='text-sm sm:text-lg font-sans text-slate-600'>3rd year(IT)</p>
+                      <p className='text-sm sm:text-lg font-sans text-slate-600'>4th year(IT)</p>
                     </div>
                   </div>
                   <div className='flex gap-2 justify-start items-center'>
@@ -41,7 +41,7 @@ const Dashboard = () => {
                     <div className='flex flex-col gap-2 px-2'>
                       <h1  className='text-lg text-[#00df9c] font-medium'>Vice President</h1>
                       <h2 className='text-lg font-sans text-black'>V.Hartitha</h2>
-                      <p className='text-sm sm:text-lg font-sans text-slate-600'>3rd year(IT)</p>
+                      <p className='text-sm sm:text-lg font-sans text-slate-600'>4th year(IT)</p>
                     </div>
                   </div>
               </div>

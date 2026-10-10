@@ -176,7 +176,7 @@ workshops, this prepares students for the fast evolving world of media and commu
             <div className="lg:ml-[6px] flex flex-col lg:justify-start sm:justify-center sm:items-center lg:items-start">
               <h1 className="sm:text-[22px] text-[20px] font-bold">Y.Ghana Sathya Karthik</h1>
               <h2 className="sm:text-[20px] text-[18px] font-medium text-purple-500">Vice President</h2>
-              <h2 className="text-[18px] font-medium">3rd Year,IT</h2>
+              <h2 className="text-[18px] font-medium">4th Year,IT</h2>
               <div className="flex justify-start items-center sm:gap-2 gap-1 mt-1">
                 <a href="https://www.instagram.com/y._g.s.karthik_chowdary?igsh=MXE2MGpqM3F4cHc2Yg==" target='_blank' rel="noopener noreferrer"><FaInstagram className="text-[18px] sm:text-[20px]  hover:text-[#fe8150] hover:cursor-pointer" /></a>
                 <a href="https://x.com/karthik91115484?t=adoxw35PGC-51kdlcPBg1A&s=09" target='_blank' rel="noopener noreferrer"><FaTwitter className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>
@@ -190,7 +190,7 @@ workshops, this prepares students for the fast evolving world of media and commu
             <div className="lg:ml-[6px] flex flex-col lg:justify-start sm:justify-center sm:items-center lg:items-start gap-1">
               <h1 className="sm:text-[22px] text-[20px] font-bold">V.Charu Brunda Hasini</h1>
               <h2 className="sm:text-[20px] text-[18px] font-medium text-purple-500">Secretary</h2>
-              <h2 className="text-[18px] font-medium">3rd Year,IT</h2>
+              <h2 className="text-[18px] font-medium">4th Year,IT</h2>
               <div className="flex justify-start items-center sm:gap-2 gap-1 mt-1">
                 <a href="https://www.instagram.com/charu_brunda_hasini?utm_source=qr&igsh=Nmh4eTA5N3oybDRt" target='_blank' rel="noopener noreferrer"><FaInstagram className="text-[18px] sm:text-[20px]  hover:text-[#fe8150] hover:cursor-pointer" /></a>
                 <a href="https://x.com/charu37904?t=RSRvV4iH1C344oK6SImlpg&s=09" target='_blank' rel="noopener noreferrer"><FaTwitter className="text-[18px] sm:text-[20px]  hover:text-blue-600 hover:cursor-pointer" /></a>

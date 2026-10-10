@@ -74,7 +74,7 @@ const OverallStudents={
     'TechnicalLead':TechnicalLead,
     'Treasurer':Treasurer,
     'Officer':Officer,
-    'Hod':BinduMam
+    'Hod':"https://jntugvcev.edu.in/uploads/departments/faculty_photos/it/dr--tirimula-rao-benala.jpg"
 
 }
 const SubClubCoordinators={

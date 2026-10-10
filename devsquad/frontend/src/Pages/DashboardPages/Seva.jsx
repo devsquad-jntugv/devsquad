@@ -36,7 +36,7 @@ const Seva = () => {
                     <div className='flex flex-col gap-2 px-2'>
                       <h1 className='text-lg text-[#00df9a] font-medium'>President</h1>
                       <h2 className='text-lg font-sans text-black'>P.Jaya Kumar</h2>
-                      <p className='text-sm sm:text-lg font-sans text-slate-600'>3rd year(IT)</p>
+                      <p className='text-sm sm:text-lg font-sans text-slate-600'>4th year(IT)</p>
                     </div>
                   </div>
                   <div className='flex gap-2 justify-start sm:justify-center items-center'>
@@ -44,7 +44,7 @@ const Seva = () => {
                     <div className='flex flex-col gap-2 px-2'>
                       <h1  className='text-lg text-[#00df9c] font-medium'>Vice President</h1>
                       <h2 className='text-lg font-sans text-black'>T.Deekshitha</h2>
-                      <p className='text-sm sm:text-lg font-sans text-slate-600'>3rd year(IT)</p>
+                      <p className='text-sm sm:text-lg font-sans text-slate-600'>4th year(IT)</p>
                     </div>
                   </div>
               </div>

@@ -97,8 +97,8 @@ const chartData = {
             <div className='flex flex-col sm:flex-row justify-center gap-3'>
               <img className='h-[70px] w-[70px] sm:h-[100px] sm:w-[100px] rounded-full' src={OverallStudents.Hod} alt='/'></img>
               <div className='flex flex-col justify-center gap-1'>
-                <h2 className='text-[18px] sm:text-[20px] font-semibold'>Dr. Ch.Bindu Madhuri</h2>
-                <p className='text-[16px] sm:text-[18px] font-sans'>Asst.Prof, & HoD</p>
+                <h2 className='text-[18px] sm:text-[20px] font-semibold'>Dr. B. Tirimula Rao</h2>
+                <p className='text-[16px] sm:text-[18px] font-sans'>Associate Professor & HoD</p>
               </div>
             </div>
           </div>
