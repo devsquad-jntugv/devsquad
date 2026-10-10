@@ -2,6 +2,9 @@
   "name": "devsquad",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "start": "concurrently \"npm start --prefix backend\" \"npm start --prefix frontend\"",
     "build": "cd frontend && npm install && npm run build",
